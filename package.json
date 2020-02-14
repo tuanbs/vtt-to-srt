@@ -1,6 +1,6 @@
 {
   "name": "node-vtt-2-srt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert Web VTT subtitle into SubRip SRT format.",
   "author": "Tuan Van Duong (@tuanvanduong)<duongvantuan85@hotmail.com>",
   "license": "MIT",
