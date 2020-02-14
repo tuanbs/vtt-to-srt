@@ -1,8 +1,8 @@
 {
-  "name": "node-vtt-to-srt",
-  "version": "1.0.1",
-  "description": "Convert Web VTT(The Web Video Text Tracks Format, aka html5 video subtitles) into SubRip SRT",
-  "author": "Riaz Laskar (@riazXrazor)<riazcool77@gmail.com>",
+  "name": "node-vtt-2-srt",
+  "version": "1.0.0",
+  "description": "Convert Web VTT subtitle into SubRip SRT format.",
+  "author": "Tuan Van Duong (@tuanvanduong)<duongvantuan85@hotmail.com>",
   "license": "MIT",
   "main": "index.js",
   "bin": "cli.js",
@@ -24,16 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/riazXrazor/vtt-to-srt.git"
+    "url": "git+https://github.com/tuanbs/vtt-to-srt.git"
   },
   "bugs": {
-    "url": "https://github.com/riazXrazor/vtt-to-srt/issues"
+    "url": "https://github.com/tuanbs/vtt-to-srt/issues"
   },
-  "homepage": "https://github.com/riazXrazor/vtt-to-srt",
+  "homepage": "https://github.com/tuanbs/vtt-to-srt#readme",
   "keywords": [
     "webvtt",
     "srt",
-    "subtitles",
-    "html5"
+    "subtitles"
   ]
 }

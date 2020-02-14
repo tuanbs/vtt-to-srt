@@ -34,7 +34,7 @@ module.exports = function () {
           item = '00:'+item.trim(); 
         }  
         return item;
-      }).join(' --> ');
+      }).join('-->');
       vttLine = vttLine+EOL
     }
     else if(line.match(/(\d{2}:\d{2}:\d{2})\.(\d{3}\s+)\-\-\>(\s+\d{2}:\d{2}:\d{2})\.(\d{3}\s*)/g))
@@ -47,7 +47,7 @@ module.exports = function () {
           item = '00:'+item.trim(); 
         }  
         return item;
-      }).join(' --> ');
+      }).join('-->');
       vttLine = EOL+vttLine+EOL
     }
     else if(line.match(reg))
@@ -57,23 +57,19 @@ module.exports = function () {
     else
     {
       var vttLine = line+EOL;
-    }     
-                  
-
-                  
-
+    }
 
     if (!vttLine.trim()) return cb();
 
         if (/^Kind:|^Language:/m.test(vttLine)) {
-            return cb();
-          }
+          return cb();
+        }
       
          if (/^[0-9]+:/m.test(vttLine)) {
             if (count === 0) {
-              vttLine = ++count + EOL + vttLine;
+              vttLine = ++count + vttLine;
             } else {
-              vttLine = EOL + ++count + EOL + vttLine;
+              vttLine = EOL + ++count + vttLine;
             }
           }
 
